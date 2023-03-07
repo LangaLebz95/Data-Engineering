@@ -1,0 +1,35 @@
+# Project-Langa
+
+You are given a dataset that is stored in a CSV file. You can upload it to this notebook from the menu on the left (see the Folder icon). These are the first three rows of the file:
+
+key,user,event,datetime
+0,11,Corporate events,2019-03-01 14:54:31
+1,88,Team building event,2020-05-14 22:22:47
+Here are the name, data type and description for each column.
+
+key (integer) - a row key that should uniquely indenify a row
+user (integer) - a user id
+event (string) - e.g a Conference, Team building event, ...
+datetime (datetime) - e.g. 2019-03-01 14:45:31
+Your task is to write Python code to perform the following actions:
+
+Load the dataset into memory
+
+Inspect and clean the data set. Questions to investigate include:
+
+Are there any duplicate rows?
+Are there any rows missing?
+Are values missing?
+Are there any invalid values such as a negative time?
+...
+Filter out events that occurred before 2020-01-01 00:00:00.
+
+Group the events by user and event.
+
+For each group, calculate:
+
+the number of events that occurred
+the average time difference between consecutive events.
+Store the result in a new CSV file with the following format:
+
+user, event, number_of_events, average_time_difference  
